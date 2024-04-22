@@ -1,4 +1,4 @@
-// Exercise Part A
+// =============================Exercise Part A=========================================
 
 // creating a db 
 <switched to db _employees_
@@ -11,4 +11,46 @@ local           6.98 GiB
 
 // Drop Database
 <{ ok: 1, dropped: 'tutorial' }
+
+// =================================Exercise Part B=====================================
+
+
+// 1- Create db, show dbs, add collection, drop db,  before and after
+
+// create and switch to new db
+<switched to db _temporary_
+// create new collection
+<{ ok: 1 }
+// show list of dbs
+<_temporary_     8.00 KiB
+sample_mflix  111.61 MiB
+test          184.00 KiB
+admin         364.00 KiB
+local           6.98 GiB
+// show list of collections
+<_test_
+// drop db
+<{ ok: 1, dropped: '_temporary_' }
+// show list of dbs after
+<sample_mflix  111.61 MiB
+test          184.00 KiB
+admin         364.00 KiB
+local           6.98 GiB
+// show list of collections after
+<
+// ----------------------------------------
+// 2- Create multiple collections using distinct department names in the database created in **exercise Part A**
+<switched to db _employees_
+<{ ok: 1 }
+<{ ok: 1 }
+<{ ok: 1 }
+
+
+//------------------------------------------
+// 3- List all the collections in the current database
+<_employees_    24.00 KiB
+sample_mflix  111.61 MiB
+test          184.00 KiB
+admin         364.00 KiB
+local           6.98 GiB
 

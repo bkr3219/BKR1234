@@ -1,4 +1,4 @@
-// Exercise Part A
+// ========================Exercise Part A=============================
 
 // 1- creating a db
 use _employees_
@@ -8,4 +8,33 @@ use _employees_
 
 // Drop Database
 >db.dropDatabase()
+
+// ========================Exercise Part B=============================
+
+// 1- Create db, add collection, drop db, show dbs before and after
+
+// create and switch to new db
+>use _temporary_
+// create new collection
+>db.createCollection('_test_')
+// show list of dbs
+>show dbs
+// show list of collections
+>show collections
+// drop db
+>db.dropDatabase()
+// show list of dbs after
+>show dbs
+// show list of collections after
+>show collections
+
+// 2- Create multiple collections using distinct department names in the database created in **exercise Part A**
+>use _employees_
+>db.createCollection("dep1")
+>db.createCollection("dep2")
+>db.createCollection("dep3")
+
+// 3- List all the collections in the current database
+>show dbs
+
 
