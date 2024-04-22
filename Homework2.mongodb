@@ -1,0 +1,11 @@
+// Exercise Part A
+
+// 1- creating a db
+use _employees_
+
+// 2- list all dbs
+>show dbs
+
+// Drop Database
+>db.dropDatabase()
+

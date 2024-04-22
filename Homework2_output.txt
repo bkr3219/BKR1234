@@ -1,0 +1,14 @@
+// Exercise Part A
+
+// creating a db 
+<switched to db _employees_
+
+// list all dbs
+<sample_mflix  111.61 MiB
+test          184.00 KiB
+admin         364.00 KiB
+local           6.98 GiB
+
+// Drop Database
+<{ ok: 1, dropped: 'tutorial' }
+
