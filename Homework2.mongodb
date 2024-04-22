@@ -37,4 +37,32 @@ use _employees_
 // 3- List all the collections in the current database
 >show dbs
 
+// ========================Exercise Part C=============================
 
+// 1- Insert some employee documents with fields(employeeid, name, salary) in the multiple collections created in the previuos exercise.
+>db.dep1.insert(
+{
+    employeeid: 1,
+    name: "John Parker",
+    salary: 70000
+})
+>db.dep2.insert(
+{
+    employeeid: 1,
+    name: "Leo Sam",
+    salary: 100000
+})
+>db.dep3.insert(
+{
+    employeeid: 1,
+    name: "Auon Aoun",
+    salary: 85000
+})
+
+// 2- Use the find command to retrieve all the entered data.
+>db.dep1.find()
+>db.dep2.find()
+>db.dep3.find()
+
+
+// ========================Exercise Part D=============================

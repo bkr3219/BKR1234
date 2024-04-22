@@ -38,7 +38,7 @@ admin         364.00 KiB
 local           6.98 GiB
 // show list of collections after
 <
-// ----------------------------------------
+
 // 2- Create multiple collections using distinct department names in the database created in **exercise Part A**
 <switched to db _employees_
 <{ ok: 1 }
@@ -46,7 +46,6 @@ local           6.98 GiB
 <{ ok: 1 }
 
 
-//------------------------------------------
 // 3- List all the collections in the current database
 <_employees_    24.00 KiB
 sample_mflix  111.61 MiB
@@ -54,3 +53,48 @@ test          184.00 KiB
 admin         364.00 KiB
 local           6.98 GiB
 
+
+// ========================Exercise Part C=============================
+
+// 1- Insert some employee documents with fields(employeeid, name, salary) in the multiple collections created in the previuos exercise.
+<{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('662657950ddcd3288d72622a')
+  }
+}
+<{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('662658040ddcd3288d72622b')
+  }
+}
+<{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6626584f0ddcd3288d72622c')
+  }
+}
+
+// 2- Use the find command to retrieve all the entered data.
+<{
+  _id: ObjectId('662657950ddcd3288d72622a'),
+  employeeid: 1,
+  name: 'John Parker',
+  salary: 70000
+}
+<{
+  _id: ObjectId('662658040ddcd3288d72622b'),
+  employeeid: 1,
+  name: 'Leo Sam',
+  salary: 100000
+}
+<{
+  _id: ObjectId('6626584f0ddcd3288d72622c'),
+  employeeid: 1,
+  name: 'Auon Aoun',
+  salary: 85000
+}
+
+
+// ========================Exercise Part D=============================
