@@ -98,3 +98,28 @@ use _employees_
 
 // 5. Find all the documents where the name filed contains John
 >db.dep1.find({ name: /John/ })
+
+// ========================Exercise Part E=============================
+
+// 1- Get all cities with a _population of less than 1500_
+>db.zips.find({
+pop: { $lt: 1500 }
+})
+
+// 2- Find all data for the city _CHESTER_ using query operator
+>db.zips.find({
+city: "CHESTER"
+})
+
+// 3- Use array query operator to find entries for the location at _\-84.38570799999999, 45.015207_
+>db.zips.find({
+loc: [-84.38570799999999, 45.015207]
+})
+
+// 4- Use a logical operator to find all entries that match the city WARREN or location -80.76424299999999, 41.231819
+>db.zips.find({
+$or:[
+  {city: "WARREN"},
+  {loc: [-80.76424299999999, 41.231819]}
+]
+})
