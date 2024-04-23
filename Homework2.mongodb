@@ -123,3 +123,11 @@ $or:[
   {loc: [-80.76424299999999, 41.231819]}
 ]
 })
+
+// ========================Exercise Part F=============================
+
+// 1- Use the $where operator to find all employess who have a salary > 75000
+> db.dep1.find({ $where: "this.salary > 75000" })
+
+// 2- Use the $where operator to find employees where the name contains John
+> db.dep1.find({ $where: "this.name.includes('John')" })
