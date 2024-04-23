@@ -565,3 +565,23 @@ Type "it" for more
   name: 'Wright John',
   salary: 65000
 }
+
+// ========================Exercise Part G=============================
+
+// 1- Using only one collection from the employees database query all the documents in that collection but return only name and salary.
+<{
+  name: 'John Parker',
+  salary: 70000
+}
+{
+  name: 'John Steight',
+  salary: 75000
+}
+{
+  name: 'Syed',
+  salary: 90000
+}
+{
+  name: 'Wright John',
+  salary: 65000
+}

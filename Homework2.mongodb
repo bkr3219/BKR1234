@@ -131,3 +131,15 @@ $or:[
 
 // 2- Use the $where operator to find employees where the name contains John
 > db.dep1.find({ $where: "this.name.includes('John')" })
+
+// ========================Exercise Part G=============================
+
+// 1- Using only one collection from the employees database query all the documents in that collection but return only name and salary.
+>db.dep1.find(
+  {},
+  {
+  name: true,
+	salary: true,
+	_id: false
+}
+)
